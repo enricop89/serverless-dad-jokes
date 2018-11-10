@@ -1,0 +1,17 @@
+{
+  "name": "twitterbot",
+  "version": "1.0.0",
+  "description": "twitter bot for serverless challenge",
+  "main": "handler.js",
+  "scripts": {
+    "deploy-dev": "serverless deploy --aws-profile lambdaPowerUser --region eu-west-1",
+    "deploy-prod": "serverless deploy --stage production --aws-profile lambdaPowerUser --region eu-west-1",
+    "test": "serverless invoke local --function dadjokes"
+  },
+  "author": "Enrico Portolan",
+  "license": "ISC",
+  "dependencies": {
+    "request-promise": "^4.2.2",
+    "twitter": "^1.7.1"
+  }
+}
